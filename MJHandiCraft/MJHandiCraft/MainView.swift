@@ -17,9 +17,9 @@ struct MainView: View {
                     Label("Menu", systemImage: "list.dash")
                 }
             
-            HomeView()
+            ProfileView()
                 .tabItem {
-                    Label("Profile", systemImage: "list.dash")
+                    Label("Profile", systemImage: "profile.dash")
                 }
         }
     }
