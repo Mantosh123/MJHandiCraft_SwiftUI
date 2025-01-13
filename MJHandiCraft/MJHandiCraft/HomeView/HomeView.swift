@@ -26,7 +26,7 @@ struct HomeView: View {
                 HStack(alignment: .top) {
                     Image(productType.photos)
                         .resizable()
-                        .scaledToFit()
+                        .scaledToFill()
                         .frame(width: 50, height: 70)
                     
                     VStack(alignment: .leading) {
@@ -38,7 +38,7 @@ struct HomeView: View {
                     }
                 }
             }
-            .navigationTitle("Catalog")
+            .navigationTitle("Select Categories")
         }
         
         
