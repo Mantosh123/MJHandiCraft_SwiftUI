@@ -19,9 +19,12 @@ struct MainView: View {
             
             ProfileView()
                 .tabItem {
-                    Label("Profile", systemImage: "profile.dash")
+                    Label("Profile", systemImage: "person.fill")
                 }
         }
     }
-    
+}
+
+#Preview {
+    MainView()
 }
