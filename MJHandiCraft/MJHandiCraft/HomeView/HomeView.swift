@@ -11,10 +11,10 @@ struct HomeView: View {
     
     var productType = [
         
-        Product( id: UUID(), name: "Ganesh Ji", discription: "Ganesh Ji made by macram thread", photos: "ganeshJi", price: 600.0),
+        Product( id: UUID(), name: "Ganesh Ji", discription: "Ganesh Ji made by macram thread", photos: "ganeshJi", price: 900.0),
         Product( id: UUID(), name: "Mirror", discription: "Mirror holder made by macram thread", photos: "mirrirholder", price: 600.0),
         Product( id: UUID(), name: "Mobile Holder", discription: "Mobile Holder made by macram thread", photos: "mobileholder", price: 600.0),
-        Product( id: UUID(), name: "Taddy Jhula", discription: "Taddy Juhla macram thread", photos: "taddyjhula", price: 600.0),
+        Product( id: UUID(), name: "Taddy Jhula", discription: "Taddy Juhla macram thread", photos: "taddyjhula", price: 930.0),
         Product( id: UUID(), name: "Mandla Art", discription: "Mandla Art discription", photos: "mandalArt", price: 600.0),
 
     ]
@@ -22,7 +22,10 @@ struct HomeView: View {
     var body: some View {
         
         NavigationStack {
+            
             List(productType) { productType in
+                
+                
                 HStack(alignment: .top) {
                     Image(productType.photos)
                         .resizable()
@@ -40,12 +43,6 @@ struct HomeView: View {
             }
             .navigationTitle("Select Categories")
         }
-        
-        
-        
-        
-        
-        
     }
 }
 
