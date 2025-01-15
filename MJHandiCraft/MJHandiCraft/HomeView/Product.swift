@@ -12,7 +12,16 @@ struct Product: Identifiable, Hashable {
     let id: UUID
     let name: String
     let discription: String
-    let photos: String
+    let image: String
     let price: Float
+
+}
+
+struct ProductCtagory: Identifiable, Hashable {
+    
+    let id: UUID
+    let name: String
+    let discription: String
+    let image: String
 
 }
