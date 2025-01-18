@@ -22,12 +22,12 @@ struct HomeView: View {
     var body: some View {
         
         NavigationStack {
-            
             List(productType) { productType in
-                
                 ProductCellView(title: productType.name, subtitle: productType.discription, imageName: productType.image)
+                    //.backgroundColor(UIColor.clear)
+                    .listRowSeparator(.hidden)
+                    .navigationTitle("Select Categories")
             }
-            .navigationTitle("Select Categories")
         }
     }
 }
