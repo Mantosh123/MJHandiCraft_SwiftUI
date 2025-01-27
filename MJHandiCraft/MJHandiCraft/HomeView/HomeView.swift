@@ -16,7 +16,9 @@ struct HomeView: View {
         ProductCtagory( id: UUID(), name: "Mobile Holder", discription: "Mobile Holder made by macram thread", image: "mobileholder"),
         ProductCtagory( id: UUID(), name: "Taddy Jhula", discription: "Taddy Juhla macram thread", image: "taddyjhula"),
         ProductCtagory( id: UUID(), name: "Mandla Art", discription: "Mandla Art discription", image: "mandalArt"),
-
+        ProductCtagory( id: UUID(), name: "Mobile Holder", discription: "Mobile Holder made by macram thread", image: "mobileholder"),
+        ProductCtagory( id: UUID(), name: "Taddy Jhula", discription: "Taddy Juhla macram thread", image: "taddyjhula"),
+        ProductCtagory( id: UUID(), name: "Mandla Art", discription: "Mandla Art discription", image: "mandalArt"),
     ]
     
     var body: some View {
@@ -27,6 +29,7 @@ struct HomeView: View {
                     //.backgroundColor(UIColor.clear)
                     .listRowSeparator(.hidden)
                     .navigationTitle("Select Categories")
+                    .background(.red)
             }
         }
     }
