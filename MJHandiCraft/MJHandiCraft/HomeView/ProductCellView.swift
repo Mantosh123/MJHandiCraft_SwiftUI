@@ -36,7 +36,7 @@ struct ProductCellView: View {
             
             Spacer()
         }
-        .background(Color.green)
+        .background(Color.white)
         .cornerRadius(12)
         .shadow(color: Color.black.opacity(0.1), radius: 4, x: 0, y: 2)
     }

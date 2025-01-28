@@ -25,11 +25,14 @@ struct HomeView: View {
         
         NavigationStack {
             List(productType) { productType in
-                ProductCellView(title: productType.name, subtitle: productType.discription, imageName: productType.image)
-                    //.backgroundColor(UIColor.clear)
-                    .listRowSeparator(.hidden)
-                    .navigationTitle("Select Categories")
-                    .background(.red)
+                
+                NavigationLink(destination: ProductDetailsView()) {
+                    ProductCellView(title: productType.name, subtitle: productType.discription, imageName: productType.image)
+                        //.backgroundColor(UIColor.clear)
+                        .listRowSeparator(.hidden)
+                        .navigationTitle("Select Categories")
+                        .background(.red)
+                }
             }
         }
     }

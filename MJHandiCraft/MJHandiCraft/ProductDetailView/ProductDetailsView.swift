@@ -11,7 +11,6 @@ import SwiftUI
 
 struct ProductDetailsView: View {
     
-    
     let columns: [GridItem] = [
         GridItem (.flexible()),
         GridItem (.flexible()),
