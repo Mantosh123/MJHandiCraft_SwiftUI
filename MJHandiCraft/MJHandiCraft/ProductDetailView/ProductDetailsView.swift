@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct ProductDetailsView: View {
     
     let columns: [GridItem] = [
@@ -26,7 +24,9 @@ struct ProductDetailsView: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color.blue)
-                                .frame(height: 150)
+                            // mirrirholder 
+                            Image("mirrirholder")
+                                //.frame(height: 150)
                             Text("\(item)")
                                 .foregroundColor(.white)
                                 .font(.title)
