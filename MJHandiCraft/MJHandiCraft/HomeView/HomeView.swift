@@ -33,6 +33,7 @@ struct HomeView: View {
                         .navigationTitle("Select Categories")
                         .background(.red)
                 }
+                .listRowSeparator(.hidden)
             }
         }
     }
