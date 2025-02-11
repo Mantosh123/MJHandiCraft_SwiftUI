@@ -31,7 +31,6 @@ struct HomeView: View {
                         //.backgroundColor(UIColor.clear)
                         .listRowSeparator(.hidden)
                         .navigationTitle("Select Categories")
-                        .background(.red)
                 }
                 .listRowSeparator(.hidden)
             }
