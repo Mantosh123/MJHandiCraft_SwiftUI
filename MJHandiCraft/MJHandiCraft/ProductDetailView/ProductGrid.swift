@@ -13,9 +13,10 @@ struct ProductGrid: View {
     
     // Define a two-column layout
     let columns = [
-        GridItem(.adaptive(minimum: 150), spacing: 10),
-        GridItem(.adaptive(minimum: 150), spacing: 10),
-        GridItem(.adaptive(minimum: 150), spacing: 10),
+        GridItem(.adaptive(minimum: 150), spacing: 2),
+        GridItem(.adaptive(minimum: 120), spacing: 2),
+        GridItem(.adaptive(minimum: 110), spacing: 2),
+        GridItem(.adaptive(minimum: 150), spacing: 2),
 
     ]
 
