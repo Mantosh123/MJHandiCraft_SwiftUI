@@ -18,26 +18,32 @@ struct ProductGrid: View {
         GridItem(.flexible(), spacing: 2),
         GridItem(.flexible(), spacing: 2),
     ]
+        
+    var productCtagory: ProductCtagory
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: columns, spacing: 2) {
-                ForEach(images.indices, id: \..self) { index in
-                    
-                    NavigationLink(destination: ProductDetailsView(imageName: images[index])) {
-                        Image(images[index])
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: CGFloat.random(in: 150...300))
-                            .cornerRadius(10)
+        NavigationStack {
+            ScrollView {
+                
+                Text("You selected: \(productCtagory.name)")
+
+                LazyVGrid(columns: columns, spacing: 2) {
+                    ForEach(images.indices, id: \..self) { index in
+                        
+                        NavigationLink(destination: ProductDetailsView(imageName: images[index])) {
+                            Image(images[index])
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: CGFloat.random(in: 150...300))
+                                .cornerRadius(10)
+                        }
                     }
                 }
+                .padding()
             }
-            .padding()
+            .toolbarBackground(Color.orange, for: .navigationBar)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle(productCtagory.name)
         }
     }
-}
-
-#Preview {
-    ProductGrid()
 }

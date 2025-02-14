@@ -26,14 +26,16 @@ struct HomeView: View {
         NavigationStack {
             List(productType) { productType in
                 
-                NavigationLink(destination: ProductGrid()) {
+                NavigationLink(destination: ProductGrid(productCtagory: productType)) {
                     ProductCellView(title: productType.name, subtitle: productType.discription, imageName: productType.image)
-                        //.backgroundColor(UIColor.clear)
                         .listRowSeparator(.hidden)
-                        .navigationTitle("Select Categories")
+                        .navigationTitle("Product Categories")
                 }
                 .listRowSeparator(.hidden)
+                .navigationBarBackButtonHidden()
             }
+            .toolbarBackground(Color.orange, for: .navigationBar)
+            .toolbarColorScheme(.light, for: .navigationBar)
         }
     }
 }

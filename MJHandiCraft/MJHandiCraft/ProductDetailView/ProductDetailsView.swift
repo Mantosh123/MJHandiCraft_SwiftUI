@@ -19,8 +19,8 @@ struct ProductDetailsView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color.black)
-                .edgesIgnoringSafeArea(.all)
+//                .background(Color.black)
+//                .edgesIgnoringSafeArea(.all)
             
         }
         
