@@ -45,5 +45,4 @@ struct ProductCellView: View {
 #Preview(body: {
     ProductCellView(title: "title", subtitle: "subtitle", imageName: "person.fill")
     ProductCellView(title: "title", subtitle: "subtitle", imageName: "person.fill")
-
 })

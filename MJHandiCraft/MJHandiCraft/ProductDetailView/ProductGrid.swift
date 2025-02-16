@@ -24,7 +24,6 @@ struct ProductGrid: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                
                 Text("You selected: \(productCtagory.name)")
 
                 LazyVGrid(columns: columns, spacing: 2) {
