@@ -22,12 +22,7 @@ struct ProductDetailsView: View {
                         .scaledToFit()
                         .frame(width: UIScreen.main.bounds.width) // Full width of the screen
                         .offset(y: -UIScreen.main.bounds.height/2) // Move the image upwards
-            
-//            Image(imageName)
-//                .resizable()
-//                .scaledToFit()
-//                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        
+                                    
                     VStack {
                         Spacer()
                         Text("Content Below the Image")
