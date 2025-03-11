@@ -10,10 +10,12 @@ import SwiftUI
 struct ProductGrid: View {
     let images = [
         "ganeshJi", "mirrirholder", "mobileholder", "taddyjhula", "mirrirholder",
+        "taddyjhula", "mirrirholder", "mobileholder", "ganeshJi", "mirrirholder",
         "taddyjhula", "mirrirholder", "mobileholder", "ganeshJi", "mirrirholder"
     ]
     
     let columns = [
+        GridItem(.flexible(), spacing: 2),
         GridItem(.flexible(), spacing: 2),
         GridItem(.flexible(), spacing: 2),
         GridItem(.flexible(), spacing: 2),
