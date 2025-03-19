@@ -35,7 +35,7 @@ struct ProductGrid: View {
                             Image(images[index])
                                 .resizable()
                                 .scaledToFit()
-                                .frame(height: CGFloat.random(in: 150...300))
+                                .frame(height: CGFloat.random(in: 140...290))
                                 .cornerRadius(10)
                         }
                     }
