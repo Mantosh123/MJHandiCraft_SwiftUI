@@ -18,7 +18,6 @@ struct ProductGrid: View {
         GridItem(.flexible(), spacing: 2),
         GridItem(.flexible(), spacing: 2),
         GridItem(.flexible(), spacing: 2),
-        GridItem(.flexible(), spacing: 2),
     ]
         
     var productCtagory: ProductCtagory
