@@ -12,14 +12,25 @@ struct SplashView: View {
     @State var isSplashView: Bool = false
     
     var body: some View {
+        
         ZStack {
             if isSplashView {
                 MainView()
             } else {
-                Color.white
-                    .background(.white)
+                //                Color(hex: "FF9300")
+                //                    .ignoresSafeArea()
                 
-                Image("logo")
+                Rectangle()
+                    .fill(
+                        LinearGradient(
+                            gradient: Gradient(colors: [.orange, .blue]),
+                            startPoint: .bottomLeading,
+                            endPoint: .topTrailing
+                        )
+                    )
+                    .ignoresSafeArea()
+                
+                Image("icon_logo")
                     .resizable()
                     .scaledToFit()
             }
