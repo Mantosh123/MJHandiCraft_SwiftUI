@@ -24,6 +24,15 @@ struct HomeView: View {
     var body: some View {
         
         NavigationStack {
+            Rectangle()
+                .fill(
+                    LinearGradient(
+                        gradient: Gradient(colors: [.orange, .blue]),
+                        startPoint: .bottomLeading,
+                        endPoint: .topTrailing
+                    )
+                )
+                .ignoresSafeArea()
             List(productType) { productType in
                 
                 NavigationLink(destination: ProductGrid(productCtagory: productType)) {
