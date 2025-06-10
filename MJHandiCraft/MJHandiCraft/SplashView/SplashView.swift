@@ -17,9 +17,6 @@ struct SplashView: View {
             if isSplashView {
                 MainView()
             } else {
-                //                Color(hex: "FF9300")
-                //                    .ignoresSafeArea()
-                
                 Rectangle()
                     .fill(
                         LinearGradient(
@@ -29,7 +26,6 @@ struct SplashView: View {
                         )
                     )
                     .ignoresSafeArea()
-                
                 Image("icon_logo")
                     .resizable()
                     .scaledToFit()
