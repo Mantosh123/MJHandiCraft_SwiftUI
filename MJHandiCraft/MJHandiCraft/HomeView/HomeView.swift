@@ -22,9 +22,7 @@ struct HomeView: View {
     ]
     
     var body: some View {
-        
         NavigationStack {
-            
             Rectangle()
                 .fill(
                     LinearGradient(
@@ -44,7 +42,6 @@ struct HomeView: View {
                 .listRowSeparator(.hidden)
                 .navigationBarBackButtonHidden()
             }
-            
             .toolbarBackground(Color.orange, for: .navigationBar)
             .toolbarColorScheme(.light, for: .navigationBar)
         }
