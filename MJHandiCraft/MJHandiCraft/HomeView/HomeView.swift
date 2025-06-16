@@ -23,27 +23,31 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack {
-            Rectangle()
-                .fill(
-                    LinearGradient(
-                        gradient: Gradient(colors: [.orange, .blue]),
-                        startPoint: .bottomLeading,
-                        endPoint: .topTrailing
+            
+            ZStack {
+                Rectangle()
+                    .fill(
+                        LinearGradient(
+                            gradient: Gradient(colors: [.orange, .blue]),
+                            startPoint: .bottomLeading,
+                            endPoint: .topTrailing
+                        )
                     )
-                )
-                .ignoresSafeArea()
-            List(productType) { productType in
-                
-                NavigationLink(destination: ProductGrid(productCtagory: productType)) {
-                    ProductCellView(title: productType.name, subtitle: productType.discription, imageName: productType.image)
-                        .listRowSeparator(.hidden)
-                        .navigationTitle("Product Categories")
+                    .ignoresSafeArea()
+                List(productType) { productType in
+                    
+                    NavigationLink(destination: ProductGrid(productCtagory: productType)) {
+                        ProductCellView(title: productType.name, subtitle: productType.discription, imageName: productType.image)
+                            .listRowSeparator(.hidden)
+                            .navigationTitle("Product Categories")
+                    }
+                    .listRowSeparator(.hidden)
+                    .navigationBarBackButtonHidden()
                 }
-                .listRowSeparator(.hidden)
-                .navigationBarBackButtonHidden()
+                .scrollContentBackground(.hidden) // hides default background
+                .background(Color.clear) // sets list background to clear                .toolbarBackground(Color.orange, for: .navigationBar)
+                .toolbarColorScheme(.light, for: .navigationBar)
             }
-            .toolbarBackground(Color.orange, for: .navigationBar)
-            .toolbarColorScheme(.light, for: .navigationBar)
         }
     }
 }
