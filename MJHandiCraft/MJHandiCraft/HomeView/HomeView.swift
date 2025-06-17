@@ -11,14 +11,14 @@ struct HomeView: View {
     
     var productType = [
         
-        ProductCtagory( id: UUID(), name: "Ganesh Ji", discription: "Ganesh Ji made by macram thread", image: "ganeshJi"),
-        ProductCtagory( id: UUID(), name: "Mirror", discription: "Mirror holder made by macram thread", image: "mirrirholder"),
-        ProductCtagory( id: UUID(), name: "Mobile Holder", discription: "Mobile Holder made by macram thread", image: "mobileholder"),
-        ProductCtagory( id: UUID(), name: "Taddy Jhula", discription: "Taddy Juhla macram thread", image: "taddyjhula"),
-        ProductCtagory( id: UUID(), name: "Mandla Art", discription: "Mandla Art discription", image: "mandalArt"),
-        ProductCtagory( id: UUID(), name: "Mobile Holder", discription: "Mobile Holder made by macram thread", image: "mobileholder"),
-        ProductCtagory( id: UUID(), name: "Taddy Jhula", discription: "Taddy Juhla macram thread", image: "taddyjhula"),
-        ProductCtagory( id: UUID(), name: "Mandla Art", discription: "Mandla Art discription", image: "mandalArt"),
+        ProductCategory( id: UUID(), name: "Ganesh Ji", discription: "Ganesh Ji made by macram thread", image: "ganeshJi"),
+        ProductCategory( id: UUID(), name: "Mirror", discription: "Mirror holder made by macram thread", image: "mirrirholder"),
+        ProductCategory( id: UUID(), name: "Mobile Holder", discription: "Mobile Holder made by macram thread", image: "mobileholder"),
+        ProductCategory( id: UUID(), name: "Taddy Jhula", discription: "Taddy Juhla macram thread", image: "taddyjhula"),
+        ProductCategory( id: UUID(), name: "Mandla Art", discription: "Mandla Art discription", image: "mandalArt"),
+        ProductCategory( id: UUID(), name: "Mobile Holder", discription: "Mobile Holder made by macram thread", image: "mobileholder"),
+        ProductCategory( id: UUID(), name: "Taddy Jhula", discription: "Taddy Juhla macram thread", image: "taddyjhula"),
+        ProductCategory( id: UUID(), name: "Mandla Art", discription: "Mandla Art discription", image: "mandalArt"),
     ]
     
     var body: some View {
@@ -36,7 +36,7 @@ struct HomeView: View {
                     .ignoresSafeArea()
                 List(productType) { productType in
                     
-                    NavigationLink(destination: ProductGrid(productCtagory: productType)) {
+                    NavigationLink(destination: ProductGrid(productCategory: productType)) {
                         ProductCellView(title: productType.name, subtitle: productType.discription, imageName: productType.image)
                             .listRowSeparator(.hidden)
                             .navigationTitle("Product Categories")

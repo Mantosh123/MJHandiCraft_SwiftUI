@@ -7,21 +7,22 @@
 
 import Foundation
 
-struct Product: Identifiable, Hashable {
+struct Product: Identifiable, Hashable, Codable {
     
     let id: UUID
     let name: String
-    let discription: String
+    let description: String
     let image: String
     let price: Float
 
 }
 
-struct ProductCtagory: Identifiable, Hashable {
+struct ProductCategory: Identifiable, Hashable, Codable {
     
     let id: UUID
     let name: String
-    let discription: String
+    let description: String
     let image: String
+    let products: [Product]
 
 }

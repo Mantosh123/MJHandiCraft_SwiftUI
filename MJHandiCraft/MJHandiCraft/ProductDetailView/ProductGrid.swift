@@ -20,12 +20,12 @@ struct ProductGrid: View {
         GridItem(.flexible(), spacing: 2),
     ]
         
-    var productCtagory: ProductCtagory
+    var productCategory: ProductCategory
     
     var body: some View {
         NavigationStack {
             ScrollView {
-                Text("You selected: \(productCtagory.name)")
+                Text("You selected: \(productCategory.name)")
 
                 LazyVGrid(columns: columns, spacing: 2) {
                     ForEach(images.indices, id: \..self) { index in
@@ -43,7 +43,7 @@ struct ProductGrid: View {
             }
             .toolbarBackground(Color.orange, for: .navigationBar)
             .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle(productCtagory.name)
+            .navigationTitle(productCategory.name)
         }
     }
 }
