@@ -1,8 +1,8 @@
 [
   {
     "id": "e4a1f702-8db0-4f2f-bc19-18ac3776fd3b",
-    "name": "Electronics",
-    "description": "Devices and gadgets for daily use",
+    "name": "Ganesh Ji",
+    "description": "Devices and gadgets for home décor",
     "image": "electronics.png",
     "products": [
       {
@@ -30,8 +30,8 @@
   },
   {
     "id": "7fda6014-617f-4e3c-b96e-55f3ad18e61c",
-    "name": "Clothing",
-    "description": "Wearables for all seasons",
+    "name": "Mirror Hoder",
+    "description": "Thesae mirrors for home décor",
     "image": "clothing.jpg",
     "products": [
       {
