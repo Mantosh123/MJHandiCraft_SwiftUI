@@ -2,30 +2,23 @@
   {
     "id": "e4a1f702-8db0-4f2f-bc19-18ac3776fd3b",
     "name": "Ganesh Ji",
-    "description": "Devices and gadgets for home décor",
-    "image": "electronics.png",
+    "description": "Gadgets for home décor",
+    "image": "ganeshJi_2.png",
     "products": [
       {
         "id": "9c14c5c5-46e5-46b2-b0a1-7b170b5edb8a",
         "name": "Smartphone",
-        "description": "Latest Android smartphone with 5G",
-        "image": "smartphone.jpg",
+        "description": "Latest home decor made by macrame thread",
+        "image": "ganeshJi_2.jpg",
         "price": 699.99
       },
       {
         "id": "9f8a4e27-5f3a-4ef8-bb5b-5c6db49ff765",
         "name": "Laptop",
-        "description": "High-performance laptop for professionals",
-        "image": "laptop.jpg",
+        "description": "Latest home decor made by macrame thread",
+        "image": "ganeshJi_1.jpg",
         "price": 1099.99
       },
-      {
-        "id": "123e4567-e89b-12d3-a456-426614174000",
-        "name": "Smartwatch",
-        "description": "Fitness and notification tracker",
-        "image": "smartwatch.jpg",
-        "price": 199.99
-      }
     ]
   },
   {
@@ -36,23 +29,23 @@
     "products": [
       {
         "id": "c78170f5-6b5a-4c3d-9e5f-58d46b1bdee9",
-        "name": "T-Shirt",
-        "description": "Comfortable cotton T-shirt",
-        "image": "tshirt.jpg",
+        "name": "Mirror Holder 1",
+        "description": "Mirror hoder for home decore made by macrame thread",
+        "image": "mirrorHolder_1.jpg",
         "price": 19.99
       },
       {
         "id": "d6a5dbcb-4e0a-42fc-9c4e-d95e7588dbf1",
-        "name": "Jeans",
-        "description": "Classic blue denim jeans",
-        "image": "jeans.jpg",
+        "name": "Mirror Holder 2",
+        "description": "Mirror hoder for home decore made by macrame thread",
+        "image": "mirrorHolder_2.jpg",
         "price": 49.99
       },
       {
         "id": "79d8bb19-3548-4b3a-92a9-1e243c891917",
-        "name": "Jacket",
-        "description": "Warm and stylish winter jacket",
-        "image": "jacket.jpg",
+        "name": "Mirror Holder 3",
+        "description": "Mirror hoder for home decore made by macrame thread",
+        "image": "mirrorHolder_3.jpg",
         "price": 89.99
       }
     ]
