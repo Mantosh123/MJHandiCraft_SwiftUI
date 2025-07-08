@@ -10,14 +10,14 @@
         "name": "Smartphone",
         "description": "Latest home decor made by macrame thread",
         "image": "ganeshJi_2.jpg",
-        "price": 699.99
+        "price": 699.00
       },
       {
         "id": "9f8a4e27-5f3a-4ef8-bb5b-5c6db49ff765",
         "name": "Laptop",
         "description": "Latest home decor made by macrame thread",
         "image": "ganeshJi_1.jpg",
-        "price": 1099.99
+        "price": 1099.00
       },
     ]
   },
@@ -32,21 +32,21 @@
         "name": "Mirror Holder 1",
         "description": "Mirror hoder for home decore made by macrame thread",
         "image": "mirrorHolder_1.jpg",
-        "price": 19.99
+        "price": 19.00
       },
       {
         "id": "d6a5dbcb-4e0a-42fc-9c4e-d95e7588dbf1",
         "name": "Mirror Holder 2",
         "description": "Mirror hoder for home decore made by macrame thread",
         "image": "mirrorHolder_2.jpg",
-        "price": 49.99
+        "price": 49.00
       },
       {
         "id": "79d8bb19-3548-4b3a-92a9-1e243c891917",
         "name": "Mirror Holder 3",
         "description": "Mirror hoder for home decore made by macrame thread",
         "image": "mirrorHolder_3.jpg",
-        "price": 89.99
+        "price": 89.00
       }
     ]
   }
