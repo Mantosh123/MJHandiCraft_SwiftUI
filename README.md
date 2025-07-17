@@ -1,2 +1,2 @@
 # MJHandiCraft_SwiftUI
-MJHandiCraft is a app for e-commmerse app.
+MJHandiCraft is an e-commmerse app.
