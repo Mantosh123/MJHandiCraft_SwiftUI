@@ -14,10 +14,11 @@ struct ProductGrid: View {
         "taddyjhula", "mirrirholder", "mobileholder", "ganeshJi", "mirrirholder"
     ]
     
+    // Adaptive grid for a Pinterest-style flexible layout
+    // This automatically fits as many columns as possible
+    // based on available width, using the given minimum size.
     let columns = [
-        GridItem(.flexible(), spacing: 2),
-        GridItem(.flexible(), spacing: 2),
-        GridItem(.flexible(), spacing: 2),
+        GridItem(.adaptive(minimum: 110), spacing: 2)
     ]
         
     var productCategory: ProductCategory
@@ -28,7 +29,7 @@ struct ProductGrid: View {
                 Text("You selected: \(productCategory.name)")
 
                 LazyVGrid(columns: columns, spacing: 2) {
-                    ForEach(images.indices, id: \..self) { index in
+                    ForEach(images.indices, id: \.self) { index in
                         
                         NavigationLink(destination: ProductDetailsView(imageName: images[index])) {
                             Image(images[index])
